@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{628a13a6-f8fd-42ff-893e-1c7abe04bd91}</ProjectGuid>
+    <RootNamespace>Zhead02</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_WINSOCK_DEPRECATED_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\Desktop\CML\Library\CML\inc\ecat;C:\Users\Administrator\Desktop\CML\Library\CML\inc\can;C:\Users\Administrator\Desktop\CML\Library\CML\c\threads;C:\Users\Administrator\Desktop\CML\Library\CML\c\ecat;C:\Users\Administrator\Desktop\CML\Library\CML\c\can;C:\Users\Administrator\Desktop\CML\Library\CML\inc;C:\Users\Administrator\Desktop\CML\Library\CML\c;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_WINSOCK_DEPRECATED_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\Desktop\CML\Library\CML\inc\ecat;C:\Users\Administrator\Desktop\CML\Library\CML\inc\can;C:\Users\Administrator\Desktop\CML\Library\CML\c\threads;C:\Users\Administrator\Desktop\CML\Library\CML\c\ecat;C:\Users\Administrator\Desktop\CML\Library\CML\c\can;C:\Users\Administrator\Desktop\CML\Library\CML\inc;C:\Users\Administrator\Desktop\CML\Library\CML\c;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Library\CML\inc\can\can_copley.h" />
+    <ClInclude Include="..\..\Library\CML\inc\can\copley_internal.h" />
+    <ClInclude Include="..\..\Library\CML\inc\CML.h" />
+    <ClInclude Include="..\..\Library\CML\inc\CML_Amp.h" />
+    <ClInclude Include="..\..\Library\CML\inc\CML_AmpDef.h" />
+    <ClInclude Include="..\..\Library\CML\inc\CML_AmpStruct.h" />
+    <ClInclude Include="..\..\Library\CML\inc\CML_Array.h" />
+    <ClInclude Include="..\..\Library\CML\inc\CML_Can.h" />
+    <ClInclude Include="..\..\Library\CML\inc\CML_CanOpen.h" />
+    <ClInclude Include="..\..\Library\CML\inc\CML_Copley.h" />
+    <ClInclude Include="..\..\Library\CML\inc\CML_CopleyIO.h" />
+    <ClInclude Include="..\..\Library\CML\inc\CML_Error.h" />
+    <ClInclude Include="..\..\Library\CML\inc\CML_ErrorCodes.h" />
+    <ClInclude Include="..\..\Library\CML\inc\CML_EtherCAT.h" />
+    <ClInclude Include="..\..\Library\CML\inc\CML_EventMap.h" />
+    <ClInclude Include="..\..\Library\CML\inc\CML_File.h" />
+    <ClInclude Include="..\..\Library\CML\inc\CML_Filter.h" />
+    <ClInclude Include="..\..\Library\CML\inc\CML_Firmware.h" />
+    <ClInclude Include="..\..\Library\CML\inc\CML_Geometry.h" />
+    <ClInclude Include="..\..\Library\CML\inc\CML_InputShaper.h" />
+    <ClInclude Include="..\..\Library\CML\inc\CML_IO.h" />
+    <ClInclude Include="..\..\Library\CML\inc\CML_Linkage.h" />
+    <ClInclude Include="..\..\Library\CML\inc\CML_Network.h" />
+    <ClInclude Include="..\..\Library\CML\inc\CML_Node.h" />
+    <ClInclude Include="..\..\Library\CML\inc\CML_Path.h" />
+    <ClInclude Include="..\..\Library\CML\inc\CML_PDO.h" />
+    <ClInclude Include="..\..\Library\CML\inc\CML_PvtConstAccelTrj.h" />
+    <ClInclude Include="..\..\Library\CML\inc\CML_PvtTrj.h" />
+    <ClInclude Include="..\..\Library\CML\inc\CML_Reference.h" />
+    <ClInclude Include="..\..\Library\CML\inc\CML_SDO.h" />
+    <ClInclude Include="..\..\Library\CML\inc\CML_Settings.h" />
+    <ClInclude Include="..\..\Library\CML\inc\CML_Threads.h" />
+    <ClInclude Include="..\..\Library\CML\inc\CML_Trajectory.h" />
+    <ClInclude Include="..\..\Library\CML\inc\CML_TrjScurve.h" />
+    <ClInclude Include="..\..\Library\CML\inc\CML_Utils.h" />
+    <ClInclude Include="..\..\Library\CML\inc\ecat\ecat_winudp.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Library\CML\c\Amp.cpp" />
+    <ClCompile Include="..\..\Library\CML\c\AmpFile.cpp" />
+    <ClCompile Include="..\..\Library\CML\c\AmpFW.cpp" />
+    <ClCompile Include="..\..\Library\CML\c\AmpParam.cpp" />
+    <ClCompile Include="..\..\Library\CML\c\AmpPDO.cpp" />
+    <ClCompile Include="..\..\Library\CML\c\AmpPVT.cpp" />
+    <ClCompile Include="..\..\Library\CML\c\AmpStruct.cpp" />
+    <ClCompile Include="..\..\Library\CML\c\AmpUnits.cpp" />
+    <ClCompile Include="..\..\Library\CML\c\AmpVersion.cpp" />
+    <ClCompile Include="..\..\Library\CML\c\Can.cpp" />
+    <ClCompile Include="..\..\Library\CML\c\CanOpen.cpp" />
+    <ClCompile Include="..\..\Library\CML\c\can\can_copley.cpp" />
+    <ClCompile Include="..\..\Library\CML\c\CML.cpp" />
+    <ClCompile Include="..\..\Library\CML\c\CopleyIO.cpp" />
+    <ClCompile Include="..\..\Library\CML\c\CopleyIOFile.cpp" />
+    <ClCompile Include="..\..\Library\CML\c\CopleyNode.cpp" />
+    <ClCompile Include="..\..\Library\CML\c\ecatdc.cpp" />
+    <ClCompile Include="..\..\Library\CML\c\ecat\ecat_winudp.cpp" />
+    <ClCompile Include="..\..\Library\CML\c\Error.cpp" />
+    <ClCompile Include="..\..\Library\CML\c\EtherCAT.cpp" />
+    <ClCompile Include="..\..\Library\CML\c\EventMap.cpp" />
+    <ClCompile Include="..\..\Library\CML\c\File.cpp" />
+    <ClCompile Include="..\..\Library\CML\c\Filter.cpp" />
+    <ClCompile Include="..\..\Library\CML\c\Firmware.cpp" />
+    <ClCompile Include="..\..\Library\CML\c\Geometry.cpp" />
+    <ClCompile Include="..\..\Library\CML\c\InputShaper.cpp" />
+    <ClCompile Include="..\..\Library\CML\c\IOmodule.cpp" />
+    <ClCompile Include="..\..\Library\CML\c\Linkage.cpp" />
+    <ClCompile Include="..\..\Library\CML\c\LSS.cpp" />
+    <ClCompile Include="..\..\Library\CML\c\Network.cpp" />
+    <ClCompile Include="..\..\Library\CML\c\Node.cpp" />
+    <ClCompile Include="..\..\Library\CML\c\Path.cpp" />
+    <ClCompile Include="..\..\Library\CML\c\PDO.cpp" />
+    <ClCompile Include="..\..\Library\CML\c\PvtConstAccelTrj.cpp" />
+    <ClCompile Include="..\..\Library\CML\c\PvtTrj.cpp" />
+    <ClCompile Include="..\..\Library\CML\c\Reference.cpp" />
+    <ClCompile Include="..\..\Library\CML\c\SDO.cpp" />
+    <ClCompile Include="..\..\Library\CML\c\Threads.cpp" />
+    <ClCompile Include="..\..\Library\CML\c\threads\Threads_w32.cpp" />
+    <ClCompile Include="..\..\Library\CML\c\TrjScurve.cpp" />
+    <ClCompile Include="..\..\Library\CML\c\Utils.cpp" />
+    <ClCompile Include="ZheadMain.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
